@@ -1,23 +1,24 @@
-const addAccordionSelectors = () => {
-	document.querySelectorAll('.accordion')
-		.forEach(node => {
-			node.onclick = e => {
+function addAccordionSelectors(){
+	var accordions = document.querySelectorAll('.accordion');
+	Object.keys(accordions)
+		.forEach(function(index){
+			accordions[index].onclick = function(event){
 				
-				if(	e.target.className !== "accordionButton" &&
-					e.target.className !== "accordionTitle" &&
-					e.target.className !== "accordionSpinnerBox" &&
-					e.target.className !== "accordionSpinner"
+				if(	event.target.className !== "accordionButton" &&
+					event.target.className !== "accordionTitle" &&
+					event.target.className !== "accordionSpinnerBox" &&
+					event.target.className !== "accordionSpinner"
 				) return null;
 
-				e.preventDefault();
+				event.preventDefault();
 				
-				node.className = ~node.className.indexOf('accordionClose')
+				accordions[index].className = ~accordions[index].className.indexOf('accordionClose')
 					? 'accordion'
 					: 'accordion accordionClose';
 			}
 		})
 }
 
-require(["gitbook"], gitbook => {
+require(["gitbook"], function(gitbook){
 	gitbook.events.bind("page.change", addAccordionSelectors);
 });
