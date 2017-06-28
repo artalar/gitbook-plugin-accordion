@@ -10,7 +10,7 @@ function addAccordionSelectors(){
 					event.target.className !== "accordionSpinner"
 				) return null;
 
-				event.preventDefault();
+				event.stopPropagation();
 				
 				accordions[index].className = ~accordions[index].className.indexOf('accordionClose')
 					? 'accordion'
