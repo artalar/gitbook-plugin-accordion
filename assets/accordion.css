@@ -4,7 +4,7 @@
 	margin-bottom: 5px;
 	border: 1px solid #e8e8e8;
 	overflow: hidden;
-	transition: min-height 250ms, max-height 250ms;
+	transition: min-height 250ms linear, max-height 250ms linear;
 }
 
 .accordionClose {
@@ -27,14 +27,14 @@
 .accordionTitle {
 	display: flex;
 	align-items: center;
-	transition: transform 250ms;
+	transition: transform 250ms linear;
 	color: #808080;
 }
 
 .accordionSpinnerBox {
 	padding-top: 10px;
 	transform: rotate(0deg);
-	transition: all 250ms;
+	transition: all 250ms linear;
 }
 
 
