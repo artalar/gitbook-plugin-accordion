@@ -1,5 +1,9 @@
 # gitbook-plugin-accordion
 
+## Example
+
+https://artalar.github.io/gitbook-plugin-accordion/
+
 ## Usage
 In GitBook editor (or any else):
 
@@ -11,4 +15,28 @@ Any content here
 %/accordion%
 ```
 
-> that`s all! But, there must be nothing more than tags and titles on the line
+> that`s all! But each tag should be in one paragraph
+
+> similarly you can include accordion in accordion (like content)
+
+> IE11+ (flexboxes)
+
+## Install
+
+Update `book.json`, like:
+
+```json
+{
+  "gitbook": "3.2.2",
+  "title": "Cool book",
+  "plugins": ["accordion"]
+}
+```
+
+Then run
+
+```bash
+gibook install 
+```
+
+That`s all, see *Usage*
