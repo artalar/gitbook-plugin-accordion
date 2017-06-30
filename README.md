@@ -1,4 +1,6 @@
 # gitbook-plugin-accordion
+###
+[![npm](http://img.shields.io/npm/dt/gitbook-plugin-accordion.svg)](https://www.npmjs.com/package/gitbook-plugin-accordion)
 
 ## Example
 
