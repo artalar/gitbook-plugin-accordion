@@ -23,7 +23,7 @@ Any content here
 
 > IE11+ (flexboxes)
 
-> 3.5 KB unzip
+> 573 B minified, 282 B minified + gzipped
 
 ## Install
 
