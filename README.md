@@ -23,6 +23,8 @@ Any content here
 
 > IE11+ (flexboxes)
 
+> 3.5 KB unzip
+
 ## Install
 
 Update `book.json`, like:
